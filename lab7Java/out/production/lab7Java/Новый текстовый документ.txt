@@ -1,0 +1,15 @@
+        int depth = 0;
+        Scanner in = new Scanner(System.in);
+        if (args.length != 2) {
+            System.out.println("usage: java Crawler <URL> <depth>");
+            System.exit(1);
+        }
+        else {
+            try {
+                depth = Integer.parseInt(args[1]);
+            }
+            catch (NumberFormatException nfe) {
+                System.out.println("usage: java Crawler <URL> <depth>");
+                System.exit(1);
+            }
+        }
